@@ -1,0 +1,137 @@
+:root {
+    --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --border-radius: 0.60rem;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+
+/*Espaciados*/
+
+.my-2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.navbar {
+    background-color: var(--color-bg-seconary);
+    box-shadow: var(--box-shadow);
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-search {
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    background-color: var(--color-bg-seconary);
+}
+
+.form-search i {
+    opacity: 0.5;
+}
+
+.form-search input {
+    border: none;
+    outline: none;
+    margin-left: 1rem;
+    background-color: var(--color-bg-seconary);
+    color: var(--color-text);
+}
+
+.filter-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    overflow: hidden;
+    background-color: var(--color-bg-seconary);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    align-items: center;
+}
+
+.card img {
+    width: 30rem;
+    height: auto;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.card-content {
+    align-items: center;
+}
+
+.card-content h3 {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 1000px) {
+    .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 750px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .card img {
+        height: auto;
+        border-top-left-radius: var(--border-radius);
+        border-top-right-radius: var(--border-radius);
+    }
+    .navbar-content {
+        font-size: 0.6rem;
+    }
+    .filter-content {
+        flex-direction: column;
+    }
+    .form-search {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .form-search input {
+        width: 85%;
+    }
+    .grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+.AutoComplete {
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, .2);
+    top: 50px;
+    z-index: 9999;
+    width: 95%;
+}
+
+.AutoComplete .complete-element {
+    color: black;
+    background-color: #cecece;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    float: left;
+}

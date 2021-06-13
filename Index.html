@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <title>Challange </title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+        <div class="container navbar-content">
+            <h1>Countries Challange </h1>
+        </div>
+    </nav>
+
+    </br>
+
+    <div>
+        <div class="container-md pt-1">
+            <div class="row">
+                <div class='col-sm AutoComplete'>
+                    <div class="card" style="width: 28rem;">
+                        <img src="img/mapamundi.jpg" class="card-img-top" alt="img">
+                        <div class="card-body">
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class='col-sm AutoComplete'>
+
+
+                    <div class="card-body">
+                        <h5 class="card-title">Search Form</h5>
+                        <p class="card-text">Input more than 3 characters, you will see a dropdown with the options that matches these characters, click it to autocomplete your search. Click Search</p>
+                        <input type='text' name='search' id='search' searchData='' class='form-control' placeholder="Enter your country">
+                        <div id="AutoComplete"></div>
+                        <input type='button' name='searchButton' id='searchButton' class='btn btn-dark ' value='Search'>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <div id="item" class="card"></div>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="./js/popper.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
